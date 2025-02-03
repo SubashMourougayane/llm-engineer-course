@@ -26,6 +26,7 @@ def scrape_website_as_markdown(url):
 
 
 def summarise_markdown(markdown_content):
+    print(markdown_content)
     apiKey = os.getenv('OPENAI_API_KEY')
     print(apiKey)
     client = OpenAI(api_key=apiKey)
